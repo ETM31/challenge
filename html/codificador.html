@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Codificador</title>
+        <link rel="stylesheet" href="../css/pagina_principal.css">
+        <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+    <header>
+        <div class="centrador">
+            <h1>CodiMsj</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="codificador.html">codificador</a></li>
+                    <li><a href="decodificador.html">decodificador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2><p>Codificador de texto</p></h2>
+            <ul class="table">
+                <li class="traductor">
+                    <label for="codificador"><p>•Qué mensaje desea codificar?</p></label>
+                    <textarea rows="10" class="input-coder" id="codificador" onchange="codificadorador();"></textarea>
+                    <button onclick="codificadorador();">Codificar</button>
+                </li>
+                <li class="traductor">
+                    <label for="mostradorCodi"><p>•Forma codificada</p></label>
+                    <textarea rows="10" class="mostrar" id="mostradorCodi"></textarea>
+                    <button onclick="copy();">Copiar</button>
+                </li>
+            </ul>
+    </main>
+
+    <footer>
+        <p>&copyCopyright CodiMsj</p>
+    </footer>
+    <script src="../js/codificador.js"></script>
+</body>    
+</html>

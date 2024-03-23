@@ -1,0 +1,270 @@
+body{
+    background: #C0D7DD ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background: #0097B8;
+    padding: 20px 0;
+}
+
+header .centrador{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.centrador h1{
+    font-family: 'Cambria';
+    font-weight: bold;
+    font-size: 2em;
+    padding: 1em 0;
+    color: white;
+    cursor: default;
+}
+
+nav{
+    position: absolute; 
+    top: 2em;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 15px;
+    font-family: 'Cambria';
+    vertical-align: top;
+}
+
+nav a{
+    font-family: channel;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #004251;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #002933;
+    transform: scale(1.1);
+}
+
+li a:active{
+    color: #4F9831;
+}
+
+/*aquí empieza el layout de codificador y decodificador*/
+main{
+    padding: 1em;
+    flex: 1;
+}
+
+/*tabla en la que centro y acomodo todo*/
+.coders{
+    width: 80%;
+    margin: 0 auto;
+}
+
+main h2{
+    text-align: center;
+}
+
+.table{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.traductor{
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    width: 460px;
+}
+
+h2 p{
+    padding: 1em 0;
+    font-family: arial;
+    font-size: 3em;
+    color: #FFFFFF;
+    text-shadow: 3px 0 0 #007D99, 0 -3px 0 #007D99, -3px 0 0 #007D99,0 3px 0 #007D99;
+    font-weight: bolder;
+}
+
+label p{
+    text-align: left;
+    font-family: Arial;
+    font-size: 1.5em;
+    padding: .5em;
+    background: #FFFFFF;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #004251;
+    border-width: 3px;
+    color: #004251;
+    width: 88%;
+    margin: 0 auto;
+    box-shadow: 0 0 7px #000000;
+
+}
+
+textarea, button{
+    margin: 1em auto;
+    box-shadow: 0 0 7px #000000;
+
+}
+
+.table textarea{
+    font-size: 1em;
+    font-family: 'arial';
+    border-style: solid;
+    border-color: #004251;
+    border-radius: 5px;
+    border-width: 3px;
+    width: 90%;
+}
+
+.table button{
+    width: 30%;
+    height: 3em;
+    background: #A1CFD8;
+    border-style: solid;
+    border-color: #004251;
+    border-radius: 9px;
+    border-width: 3px;
+    color: #004251;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 7px #000000;
+    
+}
+
+.table button:hover{
+    transform: scale(1.1);
+}
+
+.table button:active{
+    background: #A1CF8E;
+    box-shadow: 0 0 0 #000000;
+}
+
+/*esto es configuracion general del footer y header*/
+footer{
+    background: #8B8B8B;
+    margin-top: auto;
+    padding: 2em;
+}
+
+footer p{
+    font-family: arial;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+/*configuraciones del index*/
+.centrar-index{
+    width: 80%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    min-height: 75vh;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #000000;
+}
+.centrar-index h2{
+    background: #007D99;
+    border-style: solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: arial;
+    font-size: 1.5em;
+    color: #89A8FF;
+    text-shadow: 3px 0 0 #007D99, 0 -3px 0 #007D99, -3px 0 0 #007D99,0 3px 0 #007D99;
+    font-weight: bolder;
+}
+
+.elige{
+    margin: 1em 30px 0 1em;
+    text-shadow: 1px 1px 0 #002933;
+}
+
+.centrar-index li:last-child{
+    margin-top: 20px;
+    
+}
+
+.centrar-index ul{
+    border: #002933;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 9px;
+    width: 30%;
+    margin: 3em auto;
+    padding: 3em 2em;
+}
+
+.centrar-index a, .elige{
+    font-family: arial;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0097B8;
+    font-size: 2em;
+}
+
+.centrar-index a{
+    font-weight: 900;
+}
+
+.centrar-index a:hover{
+    color: #004251;
+    font-size: 2.1em;
+}
+
+
+@media screen and (max-width:480px){
+    h2 p{
+        font-size: 1em;
+    }
+
+    .centrar-index ul{
+        width: 60%;
+    }
+
+    .centrar-index a, .elige{
+        font-size: 1.5em;
+    }
+
+    .centrar-index a{
+        margin-left: -15px;
+    }
+
+    .centrar-index a:hover{
+        font-size: 25px;
+    }
+
+    header .centrador{
+        width: 95%;
+    }
+
+    nav li{
+        margin: 10px 0;
+    }
+    
+    nav a{
+        font-size: 1em;
+        text-align: right;
+    }
+
+    .table{
+        width: auto;
+    }
+    .traductor{
+        width: 100%;
+    }
+}
